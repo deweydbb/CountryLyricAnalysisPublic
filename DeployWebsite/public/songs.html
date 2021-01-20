@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSK1PLF3W9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VSK1PLF3W9');
+    </script>
+    <title>Country Lyric Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.typekit.net/fse6wuf.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+    <meta charset="UTF-8">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" onclick="checkBoxClicked()">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <a href="index.html" class="title-link"> COUNTRY LYRIC ANALYSIS </a>
+
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="analysis.html">ANALYSIS</a></li>
+                <li><a href="search.html">SEARCH</a></li>
+                <li><a href="songs.html">SONGS</a></li>
+                <li><a href="artists.html">ARTISTS</a></li>
+                <li><a href="genres.html">GENRES</a></li>
+                <li><a href="words.html">WORDS</a></li>
+                <li><a href="lyrics.html">COMPARE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Songs</h1>
+
+            <div class="chart chart-left">
+                <div class="chart-title">
+                    <h2>Rank Songs by Popularity</h2>
+                    <div class="anim">
+                        <span class="tooltip" data-tooltip="This ranks all songs in the database by popularity. You can choose to rank only 
+                        songs that were released in a specific year.">?</span>
+                    </div>
+                </div>
+
+                <div class="box-shadow">
+                    <select name="year" class="dropdown">
+                        <option value="All Years">All Years</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                    </select>
+                    <select name="results" class="dropdown">
+                        <option value="15">Results: 15</option>
+                        <option value="30">Results: 30</option>
+                        <option value="50">Results: 50</option>
+                        <option value="100">Results: 100</option>
+                        <option value="200">Results: 200</option>
+                    </select>
+                    <button class="btn enter-btn" type="button" onclick="rankByPop()">Enter</button>
+
+                    <div class="chart-column-title">
+                        <h3 class="left">Song</h3>
+                        <h3 class="right">Popularity</h3>
+                    </div>
+                    <ol class="ordered-list" id="popOL">
+                    </ol>
+                </div>
+            </div>
+
+            <div class="chart chart-right">
+                <div class="chart-title">
+                    <h2>Rank Songs by Statistics</h2>
+                    <div class="anim">
+                        <span class="tooltip" data-tooltip="This ranks all songs in the database based on the selected statistic. Click the enter button to update
+                         the graph. Descending: highest to lowest. Ascending: lowest to highest.">?</span>
+                    </div>
+                </div>
+
+                <div class=" box-shadow ">
+                    <select name="stats-dropdown" class="dropdown" onchange="watchDropDown()">
+                        <option value="uniqueness">Uniqueness</option>
+                        <option value="diversity">Diversity</option>
+                        <option value="stereotype">Stereotype</option>
+                        <option value="num_words">Number of Words</option>
+                    </select>
+                    <select hidden name="stereotype-dropdown" class="dropdown ">
+                        <option value="overall">Overall</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="body">Body</option>
+                        <option value="alcohol">Alcohol</option>
+                        <option value="trucks">Trucks</option>
+                        <option value="god">God</option>
+                        <option value="lifestyle">Lifestyle</option>
+                    </select>
+                    <select name="order" class="dropdown ">
+                        <option value="desc">Descending</option>
+                        <option value="asc">Ascending</option>
+
+                    </select>
+                    <select name="results" class="dropdown ">
+                        <option value="15 ">Results: 15</option>
+                        <option value="30 ">Results: 30</option>
+                        <option value="50 ">Results: 50</option>
+                        <option value="100 ">Results: 100</option>
+                        <option value="200 ">Results: 200</option>
+                    </select>
+                    <button class="btn enter-btn" type="button " onclick="rankByStat()">Enter</button>
+
+                    <div class="chart-column-title ">
+                        <h3 class="left ">Song</h3>
+                        <h3 class="right " id='statTitle'>Uniqueness</h3>
+                    </div>
+                    <ol class="ordered-list " id='statOL'>
+                    </ol>
+                </div>
+            </div>
+
+            <div style="clear: both; "></div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div style="height:200px; "></div>
+    </footer>
+
+    <script src="songsGeneral.js"></script>
+</body>
+
+</html>

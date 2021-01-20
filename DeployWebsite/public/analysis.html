@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSK1PLF3W9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VSK1PLF3W9');
+    </script>
+    <title>Country Lyric Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.typekit.net/fse6wuf.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+    <meta charset="UTF-8">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" onclick="checkBoxClicked()">
+            <i class="fas fa-bars"></i>
+        </label>
+
+            <a href="index.html" class="title-link"> COUNTRY LYRIC ANALYSIS </a>
+
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="analysis.html">ANALYSIS</a></li>
+                <li><a href="search.html">SEARCH</a></li>
+                <li><a href="songs.html">SONGS</a></li>
+                <li><a href="artists.html">ARTISTS</a></li>
+                <li><a href="genres.html">GENRES</a></li>
+                <li><a href="words.html">WORDS</a></li>
+                <li><a href="lyrics.html">COMPARE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>My Analysis</h1>
+
+            <!--Introduction-->
+            <div class="chart full-width">
+                <div class="chart-title">
+                    <h2>Introduction</h2>
+                </div>
+
+                <div class="box-shadow about-box">
+                    <p>
+                        My goal for this analysis is not to convince you that my favorite artist is objectively the best or that your favorite sub-genre is terrible. Instead, I will try to present interesting trends and tidbits that I discovered while creating this website.
+                        I hope that you can utilize this website to explore the data and reach your own conclusions about Country Music, whatever that may be.
+                    </p>
+
+                    <h3>Table of Contents</h3>
+                    <ul class="ordered-list" style="list-style-type: disc; margin: 0;">
+                        <li onclick="scrollToElement('trends-section')"><span>Overall Trends</span></li>
+                        <li onclick="scrollToElement('genres-section')"><span>Genres</span></li>
+                        <li onclick="scrollToElement('words-section')"><span>Words</span></li>
+                        <li onclick="scrollToElement('women-section')"><span>Women in Country</span></li>
+                        <li onclick="scrollToElement('artists-section')"><span>Artists</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Overall Trends-->
+            <div class="chart full-width">
+                <div class="chart-title">
+                    <h2 id="trends-section">Overall Trends</h2>
+                </div>
+
+                <div class="box-shadow about-box">
+                    <p>
+                        This section will cover some general trends and correlations I noticed while looking at the data. Each graph presented in this section will graph two different statistics versus each other to determine if there is a correlation between them. In every
+                        scatter plot, each dot represents a song, and the red line represents the trendline.
+                    </p>
+                    <br>
+                    <!--uniqueness VS diversity-->
+                    <h3>Uniqueness VS Diversity</h3>
+                    <hr>
+                    <p>
+                        Below is a graph of the uniqueness vs. the diversity of all of the songs in the database. The upward slope of the trendline shows a correlation between the uniqueness and diversity of a song. In General, the higher the uniqueness, the higher the diversity
+                        and vice versa. This is not too surprising because the less repetitive the song, the more unique words that will have to be used.
+                    </p>
+                    <img src="images/unqVSdiv.png" style="max-width: 60%;">
+                    <br>
+                    <!--popularity vs stereotypes-->
+                    <h3>Popularity VS Stereotype</h3>
+                    <hr>
+                    <p>
+                        The rest of these graphs will have popularity represented on the x-axis. Below, the song's popularity is graphed vs. the song's stereotypicalness, where each dot represents a song. Here the trendline shows that, in general, the more popular the song,
+                        the more stereotypical the song. However, it is important to note that this correlation is not that strong because the trendline slope is relatively flat.
+                    </p>
+                    <img src="images/popVSstr.png" style="max-width: 60%;">
+                    <br>
+                    <!--popularity vs diversity-->
+                    <h3>Popularity VS Diversity</h3>
+                    <hr>
+                    <p>
+                        In the graph below, the song's popularity is graphed vs. the song's diversity, where each dot represents a song. Here the trendline shows that, in general the more popular the song, the less lyrically diverse the song. In other words, popular songs are
+                        generally more repetitive.
+                    </p>
+                    <img src="images/popVSdiv.png" style="max-width: 60%;">
+                    <br>
+                    <!--popularity vs uniqueness-->
+                    <h3>Popularity VS Uniqueness</h3>
+                    <hr>
+                    <p>
+                        Below, the song's popularity is graphed vs. the song's uniqueness, where each dot represents a song. Here the trendline is almost flat, so the correlation is weak. That being said, more popular songs are slightly more likely to be less unique.
+                    </p>
+                    <img src="images/popVSunq.png" style="max-width: 60%;">
+                    <br>
+                </div>
+
+            </div>
+
+            <!--Genres-->
+            <div class="chart full-width">
+                <div class="chart-title">
+                    <h2 id="genres-section">Genres</h2>
+                </div>
+
+                <div class="box-shadow about-box">
+                    <p>
+                        In this section, I will cover the genres with the most artists that have interesting characteristics. The genres are in no particular order. Keep in mind that there are 29 total genres.
+                    </p>
+                    <br>
+                    <!--All Artists-->
+                    <h3>All Artists (Average)</h3>
+                    <hr>
+                    <p>
+                        The All Artists genre is not really a genre. I created it to easily find the averages of the entire database to compare other genres. One thing I find interesting is that the All Artists genre is the 10th most stereotypical genre out of the 29 genres
+                        analyzed. This means that a majority of genres are below average in stereotypicalness.
+                    </p>
+                    <table style="margin-left: 0px;">
+                        <tr>
+                            <th>Statistic</th>
+                            <th>Ranking</th>
+                        </tr>
+                        <tr>
+                            <td>Popularity</td>
+                            <td>9/29</td>
+                        </tr>
+                        <tr>
+                            <td>Uniqueness</td>
+                            <td>15/29</td>
+                        </tr>
+                        <tr>
+                            <td>Diversity</td>
+                            <td>17/29</td>
+                        </tr>
+                        <tr>
+                            <td>Stereotype</td>
+                            <td>10/29</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <!--Contemporary Country-->
+                    <h3>Contemporary Country</h3>
+                    <hr>
+                    <p>
+                        Contemporary Country is the most popular genre, and 37 of the top 50 most popular artists belong to this genre. What I find interesting is that this genre follows the trends identified in the overall trends section. Contemporary Country ranks fairly low
+                        in both uniqueness and diversity but high in stereotypicalness. In fact, 31 of the top 50 least diverse artists belong to the Contemporary Country Genre and include big names like <a href="artistspecific.html?artistId=284">Gabby Barrett</a>,
+                        <a href="artistspecific.html?artistId=436">Kane Brown</a>, and <a href="artistspecific.html?artistId=203">Dan + Shay</a>.
+                    </p>
+                    <table style="margin-left: 0px;">
+                        <tr>
+                            <th>Statistic</th>
+                            <th>Ranking</th>
+                        </tr>
+                        <tr>
+                            <td>Popularity</td>
+                            <td>1/29</td>
+                        </tr>
+                        <tr>
+                            <td>Uniqueness</td>
+                            <td>22/29</td>
+                        </tr>
+                        <tr>
+                            <td>Diversity</td>
+                            <td>24/29</td>
+                        </tr>
+                        <tr>
+                            <td>Stereotype</td>
+                            <td>4/29</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <!--Alternative Country-->
+                    <h3>Alternative Country</h3>
+                    <hr>
+                    <p>
+                        Alternative Country is aptly named because it is the statistical antithesis to Contemporary Country. It ranks exceptionally high in uniqueness and diversity and low in stereotypicalness. However, it is worth noting that Alternative Country comes in well
+                        below average in terms of popularity.
+                    </p>
+                    <table style="margin-left: 0px;">
+                        <tr>
+                            <th>Statistic</th>
+                            <th>Ranking</th>
+                        </tr>
+                        <tr>
+                            <td>Popularity</td>
+                            <td>23/29</td>
+                        </tr>
+                        <tr>
+                            <td>Uniqueness</td>
+                            <td>2/29</td>
+                        </tr>
+                        <tr>
+                            <td>Diversity</td>
+                            <td>1/29</td>
+                        </tr>
+                        <tr>
+                            <td>Stereotype</td>
+                            <td>24/29</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <!--Country Rap-->
+                    <h3>Country Rap</h3>
+                    <hr>
+                    <p>
+                        Country Rap is a mystifying genre from a statistical perspective. It breaks some of the trends identified in the previous section of my analysis and follows others. Despite being the most lyrically unique genre, it is one of the least diverse, breaking
+                        the trend. But in line with another trend, it is one of the most popular genres and one of the most stereotypical.
+                    </p>
+                    <table style="margin-left: 0px;">
+                        <tr>
+                            <th>Statistic</th>
+                            <th>Ranking</th>
+                        </tr>
+                        <tr>
+                            <td>Popularity</td>
+                            <td>4/29</td>
+                        </tr>
+                        <tr>
+                            <td>Uniqueness</td>
+                            <td>1/29</td>
+                        </tr>
+                        <tr>
+                            <td>Diversity</td>
+                            <td>25/29</td>
+                        </tr>
+                        <tr>
+                            <td>Stereotype</td>
+                            <td>1/29</td>
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+            </div>
+
+            <!--Words-->
+            <div class="chart full-width">
+                <div class="chart-title">
+                    <h2 id="words-section">Words</h2>
+                </div>
+
+                <div class="box-shadow about-box">
+                    <p>
+                        Here are some interesting trends I found in the word data.
+                    </p>
+                    <br>
+                    <!--Alcohol-->
+                    <h3>Most Popular Types of Alcohol</h3>
+                    <hr>
+                    <table style="margin-left: 0px;">
+                        <tr>
+                            <th>Word</th>
+                            <th>Number of Uses</th>
+                        </tr>
+                        <tr>
+                            <td>Beer</td>
+                            <td>1835</td>
+                        </tr>
+                        <tr>
+                            <td>Whiskey</td>
+                            <td>1725</td>
+                        </tr>
+                        <tr>
+                            <td>Wine</td>
+                            <td>1035</td>
+                        </tr>
+                        <tr>
+                            <td>Moonshine</td>
+                            <td>270</td>
+                        </tr>
+                        <tr>
+                            <td>Tequila</td>
+                            <td>229</td>
+                        </tr>
+                        <tr>
+                            <td>Champagne</td>
+                            <td>173</td>
+                        </tr>
+                        <tr>
+                            <td>Bourbon</td>
+                            <td>143</td>
+                        </tr>
+                        <tr>
+                            <td>Gin</td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>Rum</td>
+                            <td>98</td>
+                        </tr>
+                        <tr>
+                            <td>Vodka</td>
+                            <td>28</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <!--Drugs-->
+                    <h3>Most Popular Types of Drugs</h3>
+                    <hr>
+                    <table style="margin-left: 0px;">
+                        <tr>
+                            <th>Word</th>
+                            <th>Number of Uses</th>
+                        </tr>
+                        <tr>
+                            <td>Cigarette</td>
+                            <td>494</td>
+                        </tr>
+                        <tr>
+                            <td>Weed</td>
+                            <td>187</td>
+                        </tr>
+                        <tr>
+                            <td>Pot</td>
+                            <td>115</td>
+                        </tr>
+                        <tr>
+                            <td>Cocaine</td>
+                            <td>110</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <!--Swear Words-->
+                    <h3>Most Popular Swear Words</h3>
+                    <hr>
+                    <table style="margin-left: 0px;">
+                        <tr>
+                            <th>Word</th>
+                            <th>Number of Uses</th>
+                        </tr>
+                        <tr>
+                            <td>Hell</td>
+                            <td>3104</td>
+                        </tr>
+                        <tr>
+                            <td>Damn</td>
+                            <td>2090</td>
+                        </tr>
+                        <tr>
+                            <td>Shit</td>
+                            <td>587</td>
+                        </tr>
+                        <tr>
+                            <td>Ass/Asshole</td>
+                            <td>557</td>
+                        </tr>
+                        <tr>
+                            <td>Bitch</td>
+                            <td>309</td>
+                        </tr>
+                        <tr>
+                            <td>Fuck</td>
+                            <td>220</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <!--States-->
+                    <h3>Top 20 Most Mentioned States</h3>
+                    <hr>
+                    <table style="margin-left: 0px;">
+                        <tr>
+                            <th>Word</th>
+                            <th>Number of Uses</th>
+                        </tr>
+                        <tr>
+                            <td>Texas</td>
+                            <td>590</td>
+                        </tr>
+                        <tr>
+                            <td>Tennessee</td>
+                            <td>579</td>
+                        </tr>
+                        <tr>
+                            <td>California</td>
+                            <td>423</td>
+                        </tr>
+                        <tr>
+                            <td>Georgia</td>
+                            <td>320</td>
+                        </tr>
+                        <tr>
+                            <td>Mississippi</td>
+                            <td>311</td>
+                        </tr>
+                        <tr>
+                            <td>New York</td>
+                            <td>237</td>
+                        </tr>
+                        <tr>
+                            <td>Alabama</td>
+                            <td>168</td>
+                        </tr>
+                        <tr>
+                            <td>Kentucky</td>
+                            <td>148</td>
+                        </tr>
+                        <tr>
+                            <td>Louisiana</td>
+                            <td>124</td>
+                        </tr>
+                        <tr>
+                            <td>Colorado</td>
+                            <td>111</td>
+                        </tr>
+                        <tr>
+                            <td>Oklahoma</td>
+                            <td>111</td>
+                        </tr>
+                        <tr>
+                            <td>Virginia</td>
+                            <td>83</td>
+                        </tr>
+                        <tr>
+                            <td>Arkansas</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>Kansas</td>
+                            <td>62</td>
+                        </tr>
+                        <tr>
+                            <td>Florida</td>
+                            <td>58</td>
+                        </tr>
+                        <tr>
+                            <td>Arizona</td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <td>Ohio</td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <td>Illinois</td>
+                            <td>41</td>
+                        </tr>
+                        <tr>
+                            <td>Montana</td>
+                            <td>41</td>
+                        </tr>
+                        <tr>
+                            <td>Indiana</td>
+                            <td>30</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <!--Days of week-->
+                    <h3>Most Popular Days of the Week</h3>
+                    <hr>
+                    <table style="margin-left: 0px;">
+                        <tr>
+                            <th>Word</th>
+                            <th>Number of Uses</th>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>770</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>661</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>566</td>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>189</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>76</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>33</td>
+                        </tr>
+
+                    </table>
+                    <br>
+                    <!--Family Members-->
+                    <h3>Most Popular Family Members</h3>
+                    <hr>
+                    <table style="margin-left: 0px;">
+                        <tr>
+                            <th>Word</th>
+                            <th>Number of Uses</th>
+                        </tr>
+                        <tr>
+                            <td>Father/Dad</td>
+                            <td>1664</td>
+                        </tr>
+                        <tr>
+                            <td>Mother/Mom</td>
+                            <td>818</td>
+                        </tr>
+                        <tr>
+                            <td>Brother</td>
+                            <td>790</td>
+                        </tr>
+                        <tr>
+                            <td>Sister</td>
+                            <td>301</td>
+                        </tr>
+                        <tr>
+                            <td>Grandfather/Grandpa</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>GrandMother/Grandma</td>
+                            <td>91</td>
+                        </tr>
+                    </table>
+                    <br>
+
+
+
+                </div>
+
+            </div>
+            <br>
+            <br>
+            <h3>**Past this point my analysis becomes much more subjective and is influenced by my own personal thoughts and opinions**</h3>
+
+            <!--Women in Country-->
+            <div class="chart full-width">
+                <div class="chart-title">
+                    <h2 id="women-section">Women in Country</h2>
+                </div>
+
+                <div class="box-shadow about-box">
+                    <p>
+                        There are woefully few women in Country Music and even fewer when considering the most popular artists. Only 9 out of the top 50 most popular artists were women or women majority bands. So here is a list of my favorite female artists that are making great
+                        music.
+                    </p>
+                    <br>
+
+                    <ul class="ordered-list" style="list-style-type: disc;">
+                        <li><a href="artistspecific.html?artistId=441">Katie Pruitt</a></li>
+                        <li><a href="artistspecific.html?artistId=126">Caroline Spence</a></li>
+                        <li><a href="artistspecific.html?artistId=57">Ashley McBryde</a></li>
+                        <li><a href="artistspecific.html?artistId=771">The Highwomen</a></li>
+                        <li><a href="artistspecific.html?artistId=505">Lori McKenna</a></li>
+                        <li><a href="artistspecific.html?artistId=740">Tenille Townes</a></li>
+                        <li><a href="artistspecific.html?artistId=733">Tami Neilson</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Artists I wanna talk about-->
+            <div class="chart full-width">
+                <div class="chart-title">
+                    <h2 id="artists-section">Artists I wanna talk about</h2>
+                </div>
+
+                <div class="box-shadow about-box">
+                    <p>
+                        Here is a list of artists with some quality or characteristic that I found interesting (mostly). There is no particular order in which these artists are presented.
+                    </p>
+                    <br>
+                    <!--Tyler Childers-->
+                    <h3><a href="artistspecific.html?artistId=842">Tyler Childers</a></h3>
+                    <hr>
+                    <p>
+                        When 23 of the top 30 most popular artists on Spotify belong to the Contemporary Country genre, Tyler Childers stands out at <b>fourth</b> most popular. Whether you want to classify him as Indie or Americana or any other sub-genre,
+                        his musical style differs significantly from the other most popular artists. He is proof that you don't have to conform to the Nashville radio sound to be popular. You should definitely give him a listen if you haven't already.
+                    </p>
+                    <br>
+                    <!--Colter Wall-->
+                    <h3><a href="artistspecific.html?artistId=184">Colter Wall</a></h3>
+                    <hr>
+                    <p>
+                        Colter Wall stands out to me, not just because of his incredible voice, but his unprecedented statistics. He ranks extremely high compared to other artists in terms of uniqueness and diversity at 12th and 32nd, respectively. These numbers back up what
+                        his avid fans already know about him: he is a great storyteller. One of my personal favorites is his murder ballad, <a href="songSpecific.html?songId=2603">Kate McCannon</a>. I need to note that his Imaginary
+                        Appalachia album, released in 2015, somehow slipped through the cracks and did not make it into the database. In addition, he released another album, Western Swing and Waltzes, in 2020, and that also did not make it into the database
+                        because of the timing of which it was released.
+                    </p>
+                    <br>
+                    <!--Jason Hawk Harris-->
+                    <h3><a href="artistspecific.html?artistId=364">Jason Hawk Harris</a></h3>
+                    <hr>
+                    <p>
+                        Jason Hawk Harris does not really have some quality or characteristic that stuck out to justify including in this list. I had a hard enough time narrowing it down to just 5 artists. Yet, he was the one artist that was a sure lock for this list. He has
+                        been my favorite artist for about the past year and a half. His popularity rating is absurdly low for the quality of music he is creating. It’s hard for me to pick one song of his to recommend, so you should listen to all of them.
+                    </p>
+                    <br>
+                    <!--Jason Aldean-->
+                    <h3><a href="artistspecific.html?artistId=359">Jason Aldean</a></h3>
+                    <hr>
+                    <p>
+                        Jason Aldean has been a staple in the country music scene for more than a decade. He is tied for first place with Upchurch for the number of songs in the database with a whopping 91. He is the 27th most popular artist and the 31st least unique. Jason
+                        Aldean helped define country music during the early 2010s with his rocking "Bro-Country" style. My favorite song of his is <a href="songSpecific.html?songId=5457">My Kinda Party</a>.
+                    </p>
+                    <br>
+                    <!--Sturgill Simpson-->
+                    <h3><a href="artistspecific.html?artistId=726">Sturgill Simpson</a></h3>
+                    <hr>
+                    <p>
+                        Sturgill Simpson jumped out at me because of his high diversity (31st) and high popularity (35th). He is one of just 13 other artists in the top 50 most popular not to be classified as Contemporary Country. Grady Smith rightly called him one of the "Avengers
+                        of Independent Country Music."
+                    </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="aboutScroll.js"></script>
+
+    <footer>
+        <div style="height:200px;"></div>
+    </footer>
+</body>
+
+</html>

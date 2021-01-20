@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSK1PLF3W9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VSK1PLF3W9');
+    </script>
+    <title>Country Lyric Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.typekit.net/fse6wuf.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+    <meta charset="UTF-8">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" onclick="checkBoxClicked()">
+            <i class="fas fa-bars"></i>
+        </label>
+
+            <a href="index.html" class="title-link"> COUNTRY LYRIC ANALYSIS </a>
+
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="analysis.html">ANALYSIS</a></li>
+                <li><a href="search.html">SEARCH</a></li>
+                <li><a href="songs.html">SONGS</a></li>
+                <li><a href="artists.html">ARTISTS</a></li>
+                <li><a href="genres.html">GENRES</a></li>
+                <li><a href="words.html">WORDS</a></li>
+                <li><a href="lyrics.html">COMPARE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="home-page-stats">
+            <h1>Welcome to the website that allows YOU to analyze the lyrics of Country Music</h1>
+            <br>
+            <div class="h1-wrapper loading">
+                <h1>3,585,589 Words</h1>
+            </div>
+            <div class="h1-wrapper loading">
+                <h1>14,504 Songs</h1>
+            </div>
+            <div class="h1-wrapper loading">
+                <h1>836 Artists</h1>
+            </div>
+            <div class="h1-wrapper loading">
+                <h1>29 Genres</h1>
+            </div>
+        </div>
+
+        <div class="container homepage">
+            <div class="container-center">
+                <div class="home-page-text">
+                    <h2 id="aboutLink"><a href="about.html">Here is how to use this website to answer questions like:</a></h2>
+
+                    <h3><a href="words.html">What are the ten most used words in all of Country Music?</a></h3>
+                    <h3><a href="artists.html">Which artist has the most stereotypical songs?</a></h3>
+                    <h3><a href="artists.html">How popular is your favorite musician?</a></h3>
+
+
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container-center">
+                <div class="home-page-text">
+                    <h2>Inspiration for this project</h2>
+                    <h3>Grady Smith created this great video that analyzed the lyrics of the top 485 Country songs from the past five years. He collected the data for his video by hand and I knew I could use my programming skills to collect the lyrics of
+                        thousands of songs.
+                    </h3>
+                    <h3>Much of the my inspiration for the project stems directly from this video.</h3>
+                </div>
+            </div>
+
+            <div class="aspect-ratio">
+                <iframe id="grady-video" src="https://www.youtube.com/embed/48ZxNFGJTo8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+    <script src="homepage.js"></script>
+
+    <footer>
+        <div style="height:200px;"></div>
+    </footer>
+</body>
+
+</html>

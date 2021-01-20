@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSK1PLF3W9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VSK1PLF3W9');
+    </script>
+    <title>Country Lyric Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.typekit.net/fse6wuf.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+    <meta charset="UTF-8">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" onclick="checkBoxClicked()">
+            <i class="fas fa-bars"></i>
+        </label>
+
+            <a href="index.html" class="title-link"> COUNTRY LYRIC ANALYSIS </a>
+
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="analysis.html">ANALYSIS</a></li>
+                <li><a href="search.html">SEARCH</a></li>
+                <li><a href="songs.html">SONGS</a></li>
+                <li><a href="artists.html">ARTISTS</a></li>
+                <li><a href="genres.html">GENRES</a></li>
+                <li><a href="words.html">WORDS</a></li>
+                <li><a href="lyrics.html">COMPARE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Compare Genres</h1>
+
+            <div class="chart full-width">
+                <div class="chart-title">
+                    <h2>Compare Genre Statistics</h2>
+                    <div class="anim">
+                        <span class="tooltip" data-tooltip="Compare the statistics of different genres, or slice up the data even more and compare certain
+                         popularity ranges of different (or the same) genres.">?</span>
+                    </div>
+                </div>
+
+                <div class="box-shadow">
+                    <div class='genre-pop-row'>
+                        <p style="display: inline;">Genre 1:</p>
+                        <select name="genres" class="dropdown">
+                            <option value="29" selected>All Artists</option>
+                            <option value="27">Acoustic Pop</option>
+                            <option value="14">Alberta Country</option>
+                            <option value="7">Alternative Country</option>
+                            <option value="16">Americana</option>
+                            <option value="6">Arkansas Country</option>
+                            <option value="13">Australian Country</option>
+                            <option value="4">Banjo</option>
+                            <option value="21">Bluegrass</option>
+                            <option value="17">Canadian Contemporary Country</option>
+                            <option value="10">Canadian Country</option>
+                            <option value="12">Classic Country Pop</option>
+                            <option value="23">Contemporary Country</option>
+                            <option value="2">Country</option>
+                            <option value="11">Country Dawn</option>
+                            <option value="15">Country Pop</option>
+                            <option value="19">Country Rap</option>
+                            <option value="26">Country Road</option>
+                            <option value="24">Country Rock</option>
+                            <option value="8">Deep New Americana</option>
+                            <option value="20">Folk</option>
+                            <option value="1">Indie</option>
+                            <option value="25">Indie Folk</option>
+                            <option value="28">Modern Country Rock</option>
+                            <option value="3">New Americana</option>
+                            <option value="9">None</option>
+                            <option value="18">Outlaw Country</option>
+                            <option value="5">Red Dirt</option>
+                            <option value="22">Texas Country</option>
+                            
+                        </select>
+                        <br>
+                        <p>Genre Popularity Range:</p>
+                        <br>
+                        <span style="margin-left: 15px;">min:</span>
+                        <input type="number" value="0">
+                        <br>
+                        <span style="margin-left: 15px;">max:</span>
+                        <input type="number" value="100">
+                        <br>
+                        <button class="btn" type="button" onclick="removeGenreRow(0)">Remove</button>
+                    </div>
+
+                    <button class="btn" type="button" onclick="addGenreRow()">Add Genre</button>
+
+                    <br>
+
+                    <select name="stats-dropdown" class="dropdown" onchange="watchDropDown()">
+                        <option value="uniqueness">Uniqueness</option>
+                        <option value="diversity">Diversity</option>
+                        <option value="stereotype">Stereotype</option>
+                        <option value="num_words">Number of Words</option>
+                    </select>
+                    <select hidden name="stereotype-dropdown" class="dropdown ">
+                        <option value="overall">Overall</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="body">Body</option>
+                        <option value="alcohol">Alcohol</option>
+                        <option value="trucks">Trucks</option>
+                        <option value="god">God</option>
+                        <option value="lifestyle">Lifestyle</option>
+                    </select>
+
+
+                    <button class="btn enter-btn" type="button" onclick="getGenresOverTime()">Enter</button>
+                    <h3 id="graphTitle" style="text-align: center; text-transform: capitalize;">Uniqueness</h3>
+                    <div id="GraphGenreStats"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="lyricCharts.js"></script>
+
+    <footer>
+        <div style="height:200px;"></div>
+    </footer>
+</body>
+
+</html>

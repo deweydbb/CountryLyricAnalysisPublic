@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSK1PLF3W9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VSK1PLF3W9');
+    </script>
+    <title>Country Music Lyric Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.typekit.net/fse6wuf.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+
+    <meta charset="UTF-8">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" onclick="checkBoxClicked()">
+            <i class="fas fa-bars"></i>
+        </label>
+
+            <a href="index.html" class="title-link"> COUNTRY LYRIC ANALYSIS </a>
+
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="analysis.html">ANALYSIS</a></li>
+                <li><a href="search.html">SEARCH</a></li>
+                <li><a href="songs.html">SONGS</a></li>
+                <li><a href="artists.html">ARTISTS</a></li>
+                <li><a href="genres.html">GENRES</a></li>
+                <li><a href="words.html">WORDS</a></li>
+                <li><a href="lyrics.html">COMPARE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 id="genreName" style="text-transform:capitalize">Contemporary Country</h1>
+            <!--General Stats-->
+            <div class="chart chart-left">
+                <div class="chart-title">
+                    <h2>General Statistics</h2>
+                    <div class="anim">
+                        <span class="tooltip" data-tooltip="This displays general statistics about the genre. More information
+                         about what is displayed here can be found on the About page.">?</span>
+                    </div>
+                </div>
+                <div class="box-shadow">
+                    <div class="chart-column-title">
+                        <h3 class="left">Category</h3>
+                        <h3 class="right">Statistic</h3>
+                    </div>
+
+                    <ul class="ordered-list">
+                        <li>
+                            <div>
+                                <span>Number of artists:</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>Number of songs analyzed:</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>Average popularity:</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>Average uniqueness:</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>Average diversity:</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>Average stereotype:</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>Most common stereotype:</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>Average number of words:</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>Most popular year:</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>Year with most songs:</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <!--Top Artists-->
+            <div class="chart chart-right">
+                <div class="chart-title">
+                    <h2>Top Artists by Popularity</h2>
+                    <div class="anim">
+                        <span class="tooltip" data-tooltip="This displays the top ten most popular artists of the genre. If there are less
+                        than ten artists, then the database has less than ten artists assigned to this genre.">?</span>
+                    </div>
+                </div>
+                <div class="box-shadow">
+                    <div class="chart-column-title">
+                        <h3 class="left">Artist</h3>
+                        <h3 class="right">Popularity</h3>
+                    </div>
+                    <ol class="ordered-list" id="topArtistsOL">
+                    </ol>
+                </div>
+            </div>
+
+            <div style="clear: both; "></div>
+
+            <!--Num Songs Per Year-->
+            <div class="chart chart-left">
+                <div class="chart-title">
+                    <h2>Percent of Songs Per Year</h2>
+                    <div class="anim">
+                        <span class="tooltip" data-tooltip="This graph displays the percent of all songs that belong to the current genre over each year. 
+                        For example, a value of 40% in the year 2012 means that in the database 40% of all songs that came out in the year 2012 belong to 
+                        this genre">?</span>
+                    </div>
+                </div>
+                <div class="box-shadow" id="SongsPerYear"></div>
+            </div>
+
+            <!--Avg Pop Per Year-->
+            <div class="chart chart-right">
+                <div class="chart-title">
+                    <h2>Average Popularity Per Year</h2>
+                    <div class="anim">
+                        <span class="tooltip" data-tooltip="This graph shows the CURRENT popularity of the genre's songs released in different years. 
+                        This is NOT a graph of genre's popularity over time.">?</span>
+                    </div>
+                </div>
+                <div class="box-shadow" id="PopularityPerYear"></div>
+            </div>
+
+            <div style="clear: both; "></div>
+
+            <!--General Stats VS Average-->
+            <div class="chart chart-left">
+                <div class="chart-title">
+                    <h2>Genre VS Average</h2>
+                    <div class="anim">
+                        <span class="tooltip" data-tooltip="This graph displays each of the genre's average statistic (in blue) versus the corresponding average of all songs (in red). 
+                         More information about what these values represent and how they are calculated can be found on the About page">?</span>
+                    </div>
+                </div>
+                <div class="box-shadow" id="StatisticsGraph"></div>
+            </div>
+
+            <!--Stereotype categories VS Average-->
+            <div class="chart chart-right">
+                <div class="chart-title">
+                    <h2>Genre Stereotypes VS Average</h2>
+                    <div class="anim">
+                        <span class="tooltip" data-tooltip="This graph displays each of the genre's average stereotype category (in blue)
+                        versus the average stereotype category for all songs in the database (in red). More info about stereotypes and stereotype categories can
+                        be found on the About page.">?</span>
+                    </div>
+                </div>
+                <div class="box-shadow" id="StereotypesGraph"></div>
+            </div>
+
+            <div style="clear: both;"></div>
+        </div>
+    </main>
+
+    <script src="genreSpecificCharts.js"></script>
+
+    <footer>
+        <div style="height:200px; "></div>
+    </footer>
+</body>
+
+</html>

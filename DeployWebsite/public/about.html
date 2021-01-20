@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSK1PLF3W9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VSK1PLF3W9');
+    </script>
+    <title>Country Lyric Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.typekit.net/fse6wuf.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+    <meta charset="UTF-8">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" onclick="checkBoxClicked()">
+            <i class="fas fa-bars"></i>
+        </label>
+
+            <a href="index.html" class="title-link"> COUNTRY LYRIC ANALYSIS </a>
+
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="analysis.html">ANALYSIS</a></li>
+                <li><a href="search.html">SEARCH</a></li>
+                <li><a href="songs.html">SONGS</a></li>
+                <li><a href="artists.html">ARTISTS</a></li>
+                <li><a href="genres.html">GENRES</a></li>
+                <li><a href="words.html">WORDS</a></li>
+                <li><a href="lyrics.html">COMPARE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>About</h1>
+            <div class="chart full-width">
+                <div class="chart-title">
+                    <h2>Introduction</h2>
+                </div>
+
+                <div class="box-shadow about-box">
+                    <p>
+                        This website is relatively complex and data-driven. I highly suggest you read this about page, which will explain in great detail the terminology used on this website. The most important part of this page is the "Song Statistics Meanings" section. If
+                        you are only going to skim this page, I recommend starting with that section.
+                    </p>
+
+                    <h3>Table of Contents</h3>
+                    <hr>
+                    <ul class="ordered-list" style="list-style-type: disc; margin: 0;">
+                        <li onclick="scrollToElement('statistics-section')"><span>Song Statistics Meanings</span></li>
+                        <ul class="ordered-list" style="list-style-type: square; margin: 0;">
+                            <li onclick="scrollToElement('popularity-section')"><span>Popularity</span></li>
+                            <li onclick="scrollToElement('uniqueness-section')"><span>Uniqueness</span></li>
+                            <li onclick="scrollToElement('diversity-section')"><span>Diversity</span></li>
+                            <li onclick="scrollToElement('stereotype-section')"><span>Stereotypes</span></li>
+                            <li onclick="scrollToElement('clothing-section')"><span>Clothing</span></li>
+                            <li onclick="scrollToElement('body-section')"><span>Body</span></li>
+                            <li onclick="scrollToElement('alcohol-section')"><span>Alcohol</span></li>
+                            <li onclick="scrollToElement('trucks-section')"><span>Trucks</span></li>
+                            <li onclick="scrollToElement('god-section')"><span>God</span></li>
+                            <li onclick="scrollToElement('lifestyle-section')"><span>Lifestyle</span></li>
+                        </ul>
+                        <li onclick="scrollToElement('dataCollection-section')"><span>How data was collected</span></li>
+                        <li onclick="scrollToElement('generalInfo-section')"><span>General Info</span></li>
+                        <ul class="ordered-list" style="list-style-type: square; margin: 0;">
+                            <li onclick="scrollToElement('genre-section')"><span>Genres</span></li>
+                            <li onclick="scrollToElement('word-section')"><span>Words</span></li>
+                            <li onclick="scrollToElement('compare-section')"><span>Compare</span></li>
+                        </ul>
+                        <li onclick="scrollToElement('disclaimers-section')"><span>Disclaimers</span></li>
+                        <li onclick="scrollToElement('contactMe-section')"><span>Contact Me</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Song statistics meanings-->
+            <div class="chart full-width">
+                <div class="chart-title">
+                    <h2 id="statistics-section">Song Statistics Meanings</h2>
+                </div>
+
+                <div class="about-box box-shadow">
+                    <p>
+                        Each song has specific data associated with it, including artist, album, lyrics, and year released. These are pretty self-explanatory. However, other statistics related to each song are not inherently obvious. This section will explain each statistic,
+                        how it was calculated, and what it means.
+                    </p>
+                    <br>
+                    <p>
+                        The Popularity rating is on a scale from 0-100. All other ratings discussed below are on a scale from 0-1.
+                    </p>
+                    <br>
+                    <h3 id="popularity-section">Popularity</h3>
+                    <hr>
+                    <p>
+                        The popularity of a track is a value calculated by Spotify. The popularity of an artist is just the average of the popularity of all of their tracks. Likewise, the popularity of a genre is the average of all of the songs' popularity in that genre.
+                    </p>
+                    <br>
+                    <p>
+                        How the popularity is calculated is not information Spotify has released. Here is what the Spotify developer page says about how popularity is calculated: "The popularity is calculated by algorithm and is based, in the most part, on the total number of
+                        plays the track has had and how recent those plays are. Generally speaking, songs that are being played a lot now will have a higher popularity than songs that were played a lot in the past."
+                    </p>
+                    <br>
+                    <p>
+                        The popularity data displayed is accurate as of
+                        <b>DECEMBER 30th, 2020.</b>
+                    </p>
+                    <br>
+                    <p>
+                        An important thing to note is popularity represents the current popularity of a track. However, on the artist and genre individual pages, certain graphs display the artist's or genre’s popularity over time. These do
+                        <b>NOT</b> show how popular the artist/genre was in 2010, 2011, and so on. Instead, these graphs show the <b>current</b> popularity of the artist/genre's songs released in 2010, 2011, and so on. Because the Spotify popularity algorithm
+                        weights the recency of plays, the popularity of new songs is, in general, higher than older songs.
+                    </p>
+                    <br>
+                    <!--Diversity-->
+                    <h3 id="diversity-section">Diversity</h3>
+                    <hr>
+                    <p>
+                        The diversity of a track is the number of unique words divided by the total number of words in the song.
+                    </p>
+                    <br>
+                    <p>
+                        Consider the line from <a href="songSpecific.html?songId=921">The Git Up by Blanco Brown</a>: "To the left, to the left now (to the left, to the left)". The line has 13 total words, but only four unique words (to, the, left, now).
+                        Therefore, this line has a diversity of around 0.31. The highest diversity possible is 1, while the lowest theoretical diversity is 0.
+                    </p>
+                    <br>
+                    <p>
+                        The diversity of a song is related to the repetitiveness of the lyrics. Generally, the higher the diversity, the lower the repetitiveness, and vice versa. However, it is important to remember that a song's diversity cannot determine the repetitiveness
+                        of the phrases used in the song, just the words.
+                    </p>
+                    <br>
+                    <!--Uniqueness-->
+                    <h3 id="uniqueness-section">Uniqueness</h3>
+                    <hr>
+                    <p>
+                        The uniqueness of a song is determined by the commonness of the words used in the song's lyrics. Unlike diversity, this compares the words used in a song's lyrics to all other lyrics in the database. The more frequently a word is used, the less unique
+                        it is and vise versa.
+                    </p>
+                    <br>
+                    <p>
+                        I think this is better understood with an example. So let's revisit that same line from <a href="songSpecific.html?songId=921">The Git Up by Blanco Brown</a>: "To the left, to the left now (to the left, to the left)." The line
+                        has a uniqueness of around 0.05. Now let's look at a line from <a href="songSpecific.html?songId=5588">Confused by Jason Hawk Harris</a>: "Learning Greek between our sheets. Evolution, Holy Ghosts, and entropy". The line has a
+                        uniqueness of around 0.87. Similar to diversity, the highest possible uniqueness is 1, while the lowest theoretical uniqueness is 0.
+                    </p>
+                    <br>
+                    <p>
+                        Now, how uniqueness is calculated is somewhat complex. First, words like "the," "a," and "and" are ignored. A full list of ignored words and how they were chosen can be found <a href="#genre-section">here</a>. Next, my program
+                        counts the number of total uses for each word. Words are then assigned a rank, with the most used word receiving a rank of 1. The second most used word receives a rank of 2 and so on. Words with the same number of uses receive
+                        the same rank. Each word is then assigned its own uniqueness rating, which is calculated by taking the word's rank divided by the highest numerical rank. So words that are only used once have a rating of 1 (highest numerical rank
+                        / highest numerical rank), while the word used the most has the uniqueness ranking closest to 0 (1 / highest numerical rank). Finding the uniqueness rating of a song is trivial because it is the average of each word's uniqueness
+                        rating.
+                    </p>
+                    <br>
+                    <!--Stereotype-->
+                    <h3 id="stereotype-section">Stereotypes</h3>
+                    <hr>
+                    <p>
+                        The stereotype rating associated with a song is an attempt to quantify the stereotypicalness of its lyrics. Simply put, it is the percentage of words in the song that are deemed stereotypical. The stereotype rating is separated into six distinct sub-categories:
+                        clothing, body, alcohol, trucks, god, and lifestyle. To determine which words were stereotypical, with the help of several others, I looked through all of the words in the dataset which were used more than 50 times. If we believed
+                        a word to be stereotypical, we assigned it to a sub-category. Any variations of the word (plural, -ing, etc.) were also assigned to the sub-category. No word was assigned to more than one sub-category.
+                    </p>
+                    <br>
+                    <p>
+                        Each stereotype sub-category is calculated similarly to the overall stereotype rating. It is the percentage of words in the song assigned to that specific sub-category.
+                    </p>
+                    <br>
+                    <p>
+                        The overall stereotype rating is simply a sum of all sub-category ratings.
+                    </p>
+                    <br>
+                    <!--Clothing-->
+                    <h3 id="clothing-section">Clothing</h3>
+                    <hr>
+                    <p>
+                        The clothing stereotype sub-category includes words like jeans, boots, and hat. A full list of words can be found <a target="_blank" rel="noopener noreferrer" href="files/clothing.txt">here</a>.
+                    </p>
+                    <br>
+                    <!--Body-->
+                    <h3 id="body-section">Body</h3>
+                    <hr>
+                    <p>
+                        The body stereotype sub-category includes words like baby, eyes, and lips. A full list of words can be found <a target="_blank" rel="noopener noreferrer" href="files/body.txt">here</a>.
+                    </p>
+                    <br>
+                    <!--Alcohol-->
+                    <h3 id="alcohol-section">Alcohol</h3>
+                    <hr>
+                    <p>
+                        The alcohol stereotype sub-category includes words like beer, drink, and whiskey. A full list of words can be found <a target="_blank" rel="noopener noreferrer" href="files/alcohol.txt">here</a>.
+                    </p>
+                    <br>
+                    <!--Trucks-->
+                    <h3 id="trucks-section">Trucks</h3>
+                    <hr>
+                    <p>
+                        The trucks stereotype sub-category includes words like truck, backroad, and chevy. A full list of words can be found <a target="_blank" rel="noopener noreferrer" href="files/trucks.txt">here</a>. This sub-category is not specific
+                        to trucks, but rather anything related to cars.
+                    </p>
+                    <br>
+                    <!--God-->
+                    <h3 id="god-section">God</h3>
+                    <hr>
+                    <p>
+                        The god stereotype sub-category includes words like god, Jesus, and devil. A full list of words can be found <a target="_blank" rel="noopener noreferrer" href="files/god.txt">here</a>.
+                    </p>
+                    <br>
+                    <!--Lifestyle-->
+                    <h3 id="lifestyle-section">Lifestyle</h3>
+                    <hr>
+                    <p>
+                        The lifestyle stereotype sub-category includes words like cowboy, farm, and rodeo. A full list of words can be found <a target="_blank" rel="noopener noreferrer" href="files/lifestyle.txt">here</a>.
+                    </p>
+                    <br>
+                </div>
+            </div>
+
+            <!--How data was collected-->
+            <div class="chart full-width">
+                <div class="chart-title">
+                    <h2 id="dataCollection-section">How data was collected</h2>
+                </div>
+
+                <div class="box-shadow about-box">
+                    <p>
+                        This section will cover how I collected the lyrics of thousands of country songs and the implications it has on the data.
+                    </p>
+                    <h3>
+                        Albums 🠖 Spotify 🠖 Tracks 🠖 Lyrics
+                    </h3>
+                    <hr>
+                    <br>
+                    <p>
+                        On September 23rd, 2020, I used Puppeteer, a web scraping library, to scrape my initial list of albums, released from 2010 to 2020, from <a target="_blank" rel="noopener noreferrer" href="https://www.allmusic.com/advanced-search">AllMusic.com</a>.
+                        With each album, I associated an artist and year. If an album did not appear on AllMusic's list, it is not in the database. This means that any music released after September 23rd is not included. In addition, many albums released
+                        slightly before this date are also not likely to have been included, especially if they are by lesser-known artists. From this initial list of albums, I then programmatically associated each album with an album on Spotify. The
+                        reason I did this is that Spotify has an excellent developer API. Once I had a Spotify album id, I could then obtain a list of songs on the album. Next, I converted a list of albums into a list of tracks and associated each with
+                        an artist, album, year, genre, and popularity. It is important to note that any song released as a single but not put on an album will not have made it into the database. Also, because I used Spotify, Garth Brooks did not make
+                        it into the database even though he released two albums between 2010 and 2020.
+                    </p>
+                    <br>
+                    <p>
+                        At this point, I began to clean the list of songs. First, I removed any Christmas songs because I did not feel that Christmas music, regardless of artist, belongs to the Country Music genre. Secondly, I removed any songs that were overtly Christian. I
+                        identified these songs mainly by their genre (Ex: "Christian indie," "Christian pop," and "Christian music"). Lastly, I removed a few karaoke albums and movie soundtracks.
+                    </p>
+                    <br>
+                    <p>
+                        Now, all I had to do was obtain the lyrics for thousands of songs. To do this, I created a custom web scraping program that would search multiple lyric websites. As much as I tried to perfect my program, it could only do so much. Most of the songs I could
+                        not find lyrics for had very low popularity ratings. I even resorted to a semi-manual version of the program to improve the number of lyrics I could find. All in all, I ended up with just over 14,500 songs. While I am aware of
+                        albums or artists that did not make it into the database, I believe that 14,500 sounds are still a large enough sample size to look at general trends in Country Music.
+                    </p>
+                    <br>
+                    <p>
+                        At this point, I have no plans to update the songs included in the database. Although that could change depending on how much usage this site receives.
+                    </p>
+                </div>
+            </div>
+
+            <!--General Info/Tips-->
+            <div class="chart full-width">
+                <div class="chart-title">
+                    <h2 id="generalInfo-section">General Info</h2>
+                    <div class="anim">
+                        <span class="tooltip" data-tooltip="This is an example of a tooltip that is used quite often throughout this website. It will hold helpful information about the section below it. It will often provide more detail
+                        about what exactly you are looking at.
+                        ">?</span>
+                    </div>
+                </div>
+
+                <div class="box-shadow about-box">
+                    <p>
+                        This section gives some more in-depth info about genres and different pages on the website. In addition, hover over (or tap if on mobile) the black circle with a question mark above this sentence for additional help.
+                    </p>
+                    <!--Genre section-->
+                    <h3 id="genre-section">
+                        Genres
+                    </h3>
+                    <hr>
+                    <p>
+                        Each artist is associated with a genre, which is assigned by Spotify. In addition, genres that were "Location Indie" were added to the "Indie" genre. This also applies to the Americana genre. Any artists that belonged to a genre with fewer than five artists
+                        were assigned to the "None" genre.
+                    </p>
+                    <br>
+                    <p>
+                        The "All Artist" genre includes all artists in the genre regardless of the Spotify assigned genre. This genre is the average of the database and can be useful when ranking genres on the genres page to figure out which are above or below average.
+                    </p>
+                    <!--word section-->
+                    <h3 id="word-section">
+                        Words
+                    </h3>
+                    <hr>
+                    <p>
+                        On the words page, it is possible to rank the words by usage. However, some words like "the," "a," and "and" are ignored. All articles, coordinating conjunctions, pronouns, demonstratives, and qualifiers were ignored. A full list can be found
+                        <a target="_blank" rel="noopener noreferrer" href="files/ignoredWords.txt">here</a>.
+                    </p>
+                    <br>
+                    <p>
+                        On the Words Page, you can also graph the usage of a certain word from a specific genre over time. Because the number of songs varies over time, the vertical axis is the average number of uses per song. A value of 1 means that the given word was used
+                        on average once per song in the specified genre. I would caution using this chart to compare words that are not often used because the sample space becomes relatively small, and the results may not be truly representative.
+                    </p>
+                    <!--compare section-->
+                    <h3 id="compare-section">
+                        Compare
+                    </h3>
+                    <hr>
+                    <p>
+                        The Compare Page is relatively complex. You might need to spend some time experimenting with this page before you understand its full power and usefulness.
+                    </p>
+                    <br>
+                    <p>
+                        First, it allows you to compare the various statistics of different genres over time. For example, you could compare the overall stereotypicalness of Contemporary Country versus Americana. However, that is not all this page allows you to do. It also allows
+                        you to enter a popularity range for each genre you are comparing. If you enter a popularity range of 30-50, the page will graph the given statistic of just songs in the given genre that fall into that popularity range. I would
+                        caution you against selecting popularity ranges that are relatively small because you will reduce the sample size, and the graph is less likely to be representative.
+                    </p>
+                    <br>
+                    <p>
+                        Here is the breakdown of the number of songs in the All Artists genre by popularity range for your convenience. Keep in mind that choosing a genre that is not All Artists will further reduce the number of songs in any popularity range.
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Popularity Range</th>
+                            <th>Number of songs</th>
+                            <th>Percentage of songs</th>
+                        </tr>
+                        <tr>
+                            <td>00-100</td>
+                            <td>14,005</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>10-100</td>
+                            <td>12,000</td>
+                            <td>83%</td>
+                        </tr>
+                        <tr>
+                            <td>20-100</td>
+                            <td>8,483</td>
+                            <td>58%</td>
+                        </tr>
+                        <tr>
+                            <td>30-100</td>
+                            <td>5282</td>
+                            <td>36%</td>
+                        </tr>
+                        <tr>
+                            <td>40-100</td>
+                            <td>2,830</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td>50-100</td>
+                            <td>1,231</td>
+                            <td>8%</td>
+                        </tr>
+                        <tr>
+                            <td>60-100</td>
+                            <td>476</td>
+                            <td>3%</td>
+                        </tr>
+                        <tr>
+                            <td>70-100</td>
+                            <td>79</td>
+                            <td>0.5%</td>
+                        </tr>
+                        <tr>
+                            <td>80-100</td>
+                            <td>6</td>
+                            <td>0.04%</td>
+                        </tr>
+                        <tr>
+                            <td>90-100</td>
+                            <td>0</td>
+                            <td>0%</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!--Disclaimers-->
+            <div class="chart full-width">
+                <div class="chart-title">
+                    <h2 id="disclaimers-section">Disclaimers</h2>
+                </div>
+
+                <div class="box-shadow about-box">
+                    <h3 id="2020-section">2020</h3>
+                    <hr>
+                    <p>
+                        Because the original list of albums was scraped from AllMusic.com in September of 2020, the year 2020 is incomplete. I would be cautious in including the year 2020 in any general trends, and just something to keep in mind as you explore this website.
+                    </p>
+                    <h3 id="seriousness-section">Seriousness</h3>
+                    <hr>
+                    <p>
+                        This is in no way a scientific or overly serious project. I enjoy programming and country music and found this to be a fun personal project. I found it engaging to compare my favorite artists and genres against others, and along the way found some new
+                        artists I enjoy.
+                    </p>
+                    <h3 id="websiteDesign-section">Website Design</h3>
+                    <hr>
+                    <p>
+                        Even though I do enjoy programming, I am neither good at nor enjoy creating user interfaces. The design of this website is focused on presenting the information in an understandable and digestible format. I am not a website building wizard, and honestly,
+                        if I had spent any more time making the website look fancier, I might have gone insane. I would also advise against using this website on a mobile device because I have devoted even less time to make the website scale to the size
+                        of mobile screens.
+                    </p>
+                </div>
+            </div>
+
+            <!--Contact Me-->
+            <div class="chart full-width">
+                <div class="chart-title">
+                    <h2 id="contactMe-section">Contact Me</h2>
+                </div>
+
+                <div class="box-shadow about-box">
+                    <p>
+                        Have questions about this project, found a bug? You can email me at: <a href="mailto:countrylyricanalysis@gmail.com">countrylyricanalysis@gmail.com</a>
+                    </p>
+                    <p>
+                        Impressed by this project? I am a sophomore studying computer science looking for a programming internship for the summer of 2021.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src="aboutScroll.js"></script>
+
+    <footer>
+        <div style="height:200px;"></div>
+    </footer>
+</body>
+
+</html>

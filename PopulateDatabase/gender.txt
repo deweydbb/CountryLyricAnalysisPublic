@@ -1,0 +1,836 @@
+w	Taylor Swift
+w	Maren Morris
+w	The Chicks
+w	Ingrid Andress
+w	Gabby Barrett
+w	Kacey Musgraves
+w	Kelsea Ballerini
+w	The Highwomen
+w	Carrie Underwood
+w	Tenille Townes
+w	Maddie & Tae
+w	Miranda Lambert
+w	Lady A
+w	Ashley McBryde
+w	Katie Pruitt
+w	Carly Pearce
+w	Kathleen Edwards
+w	RaeLynn
+w	Pistol Annies
+w	Jana Kramer
+w	Little Big Town
+w	Kylie Minogue
+w	Sugarland
+w	The Band Perry
+w	Caylee Hammack
+w	Runaway June
+w	Tenille Arts
+w	The Wandering Hearts
+w	Alison Krauss & Union Station
+w	Lauren Alaina
+w	Cassadee Pope
+w	Gillian Welch
+w	Hillary Scott & The Scott Family
+w	Margo Price
+w	Shania Twain
+w	Jessie Buckley
+w	Lori McKenna
+w	Clare Dunn
+w	Caitlyn Smith
+w	Tanya Tucker
+w	Aleyce Simmonds
+w	I'm With Her
+w	The Common Linnets
+w	Sarah Jarosz
+w	The Shires
+w	Reba McEntire
+w	Sheryl Crow
+w	Megan McKenna
+w	The Lone Bellow
+w	Brandy Clark
+w	Rhiannon Giddens
+w	Sarah Shook & the Disarmers
+w	Lindsay Ell
+w	The Wind and The Wave
+w	Courtney Marie Andrews
+w	The Wailin' Jennys
+w	Alison Krauss
+w	Catherine McGrath
+w	Caroline Jones
+w	honeyhoney
+w	Aoife O'Donovan
+w	Dead Fingers
+w	Dolly Parton
+w	Larkin Poe
+w	Jennifer Nettles
+w	Sara Evans
+w	Rumer
+w	Loretta Lynn
+w	Caroline Spence
+w	Ashley Monroe
+w	Lissie
+w	Sara Watkins
+w	The McClymonts
+w	Meghan Patrick
+w	Kristin Diable
+w	Gloriana
+w	Twinnie
+w	Esther Rose
+w	Kelley Mickwee
+w	Jessi Alexander
+w	Watkins Family Hour
+w	Eilen Jewell
+w	Sunny Sweeney
+w	Rachel Baiman
+w	Holly Williams
+w	Pharis & Jason Romero
+w	BROWN & GRAY
+w	Ola Belle Reed
+w	Dawn Landes
+w	Emmylou Harris
+w	Mary Chapin Carpenter
+w	Trisha Yearwood
+w	Joan Shelley
+w	Lucinda Williams
+w	Lillie Mae
+w	Joey + Rory
+w	Maggie Rose
+w	Birds of Chicago
+w	Karen Waldrup
+w	Martina McBride
+w	Lee Ann Womack
+w	LeAnn Rimes
+w	Kellie Pickler
+w	K.T. Oslin
+w	Sister Hazel
+w	Michaela Anne
+w	Sierra Hull
+w	Diane Schuur
+w	Rosanne Cash
+w	Puss N Boots
+w	Lauren Jenkins
+w	Kristian Bush
+w	Striking Matches
+w	Jamie Lin Wilson
+w	Audra Mae & The Almighty Sound
+w	Madeline Merlo
+w	Amanda Shires
+w	Gretchen Wilson
+w	Drew Holcomb & The Neighbors
+w	Whitney Duncan
+w	Autumn Hill
+w	Lera Lynn
+w	Kristin Chenoweth
+w	Stephanie Quayle
+w	Front Country
+w	The Secret Sisters
+w	Lydia Loveless
+w	American Young
+w	Dori Freeman
+w	Claire Lynch
+w	The Honeycutters
+w	Steel Magnolia
+w	Applewood Road
+w	Lucette
+w	Lindi Ortega
+w	Kelsey Waldon
+w	Rita Wilson
+w	Nikki Lane
+w	Jade Jackson
+w	Aubrie Sellers
+w	Laura Bell Bundy
+w	Carolyn Wonderland
+w	Kira Isabella
+w	Bri Bagwell
+w	Ruthie Collins
+w	Audra Mae
+w	Ilse DeLange
+w	Jessica Meuse
+w	Della Mae
+w	Laura Veirs
+w	Buddy & Julie Miller
+w	Amber Lawrence
+w	Mindy McCready
+w	Sherri Austin
+w	Mary Gauthier
+w	Terri Clark
+w	Sarah Darling
+w	Liz Longley
+w	Anna & Elizabeth
+w	Sarah Buxton
+w	Shelby Lynne
+w	Angaleena Presley
+w	Whitney Rose
+w	Jo Dee Messina
+w	Pam Tillis
+w	Laura Gibson
+w	The Delines
+w	Elizabeth Cook
+w	Jaida Dreyer
+w	Court Yard Hounds
+w	Tift Merritt
+w	Kelly Willis & Bruce Robison
+w	Courtney Patton
+w	Krystal Keith
+w	Donna The Buffalo
+w	Gretchen Peters
+w	Mandy Barnett
+w	Julie Roberts
+w	Carter's Chord
+w	Allison Moorer
+w	Mickie James
+w	Sera Cahoone
+w	Suzy Bogguss
+w	Marie Osmond
+w	Chely Wright
+w	Jessica Harp
+w	Gl
+w	The Duhks
+w	Tami Neilson
+w	Ashton Shepherd
+w	Kree Harrison
+w	Mindy Smith
+w	Jasmine Rae
+w	Kasey Chambers
+w	Carolyn Dawn Johnson
+w	Matraca Berg
+w	Carlene Carter
+w	Tara Oram
+w	Bonnie Bishop
+w	Kim Richey
+w	Maria Taylor
+w	Madison Violet
+w	Kathy Mattea
+w	Beth Nielsen Chapman
+w	Small Town Pistols
+w	Ruby Boots
+w	Simone Felice
+w	Catherine Britt
+w	Lorrie Morgan
+w	Georgette Jones
+w	The Watson Twins
+w	Jessi Colter
+w	Hannah Aldridge
+w	Heidi Talbot
+w	Cherryholmes
+w	Laura Cantrell
+w	Nora Jane Struthers
+w	Sahara Smith
+w	Jessie Farrell
+w	Marlee Scott
+w	Patricia Vonne
+w	Juice Newton
+w	Lynn Anderson
+w	Massy Ferguson
+w	The Roys
+w	Red Sky July
+w	Truckstop Honeymoon
+w	Shawna Russell
+	Morgan Wallen
+	Luke Combs
+	Chris Stapleton
+	Tyler Childers
+	Sam Hunt
+	HARDY
+	The Lumineers
+	Kane Brown
+	Dan + Shay
+	Riley Green
+	Hosier
+	Brett Young
+	Jon Pardi
+	Jelly Roll
+	Brooks & Dunn
+	Jacob Bryant
+	Jordan Davis
+	Old Dominion
+	Thomas Rhett
+	Koe Wetzel
+	Eric Church
+	Jason Aldean
+	Cody Johnson
+	Florida Georgia Line
+	Mitchell Tenpenny
+	Parker McCollum
+	Adam Calhoun
+	Colter Wall
+	Sturgill Simpson
+	Brothers Osborne
+	Russell Dickerson
+	Zac Brown Band
+	Midland
+	Brantley Gilbert
+	Cole Swindell
+	Luke Bryan
+	Chris Young
+	Upchurch
+	Charlie Cunningham
+	Turnpike Troubadours
+	Kip Moore
+	Aaron Lewis
+	Cody Jinks
+	Whiskey Myers
+	Brett Eldredge
+	Jason Isbell
+	Kenny Chesney
+	Billy Strings
+	Dustin Lynch
+	Chase Bryant
+	LANCO
+	Flatland Cavalry
+	Blake Shelton
+	Jake Owen
+	Dierks Bentley
+	Lee Brice
+	Johnny Cash
+	Paul Cauthen
+	Mandolin Orange
+	Justin Moore
+	The Reklaws
+	Cam
+	Darius Rucker
+	Ryan Hurd
+	Jessta James
+	Billy Currington
+	Keith Urban
+	Scotty McCreery
+	Gone West
+	Drake White
+	Casey Donahew
+	The Steeldrivers
+	Tyler Farr
+	Charley Crockett
+	Chris Lane
+	Hunter Hayes
+	Randall King
+	Devin Dawson
+	Charley Pride
+	Cory Marks
+	Ruston Kelly
+	Blanco Brown
+	The Steel Woods
+	George Strait
+	The Cadillac Three
+	Rodney Atkins
+	Nickel Creek
+	Chris Janson
+	Dylan Scott
+	Matt Scullion
+	Michael Ray
+	Jimmie Allen
+	LOCASH
+	Easton Corbin
+	Tucker Beathard
+	Brent Cobb
+	Josh Turner
+	Dolly Shine
+	Sam Morrow
+	Shotgun Rider
+	Brad Paisley
+	Tim McGraw
+	Jamey Johnson
+	Alan Jackson
+	Matt Stell
+	Racket County
+	Granger Smith
+	Lionel Richie
+	The Lonely Heartstring Band
+	Tebey
+	Shane Smith & the Saints
+	Canaan Smith
+	Demun Jones
+	Eric Paslay
+	Logan Mize
+	King Calaway
+	Lake Street Dive
+	Rascal Flatts
+	Aaron Watson
+	The Lacs
+	Danielle Bradbery
+	Langhorne Slim
+	Josh Thompson
+	Adam Sanders
+	Morgan Evans
+	William Michael Morgan
+	Travis Denning
+	Paul Thorn
+	Redneck Souljers
+	McAlister Kemp
+	Struggle Jennings
+	Ryan Bingham
+	Randy Houser
+	Sam Riggs
+	Gary Allan
+	Randy Rogers Band
+	Eli Young Band
+	Josh Ward
+	Frankie Ballard
+	Parmalee
+	Houndmouth
+	Swamp Dogg
+	Jawga Boyz
+	Nick 13
+	Moonshine Bandits
+	The Cactus Blossoms
+	The Panhandlers
+	Kenny Rogers
+	Blackberry Smoke
+	John Prine
+	Dillon Carmichael
+	Craig Campbell
+	The Barr Brothers
+	Frank Foster
+	Chase Rice
+	William Clark Green
+	Chris Cagle
+	The Wood Brothers
+	Walker Hayes
+	Justin Townes Earle
+	Steven Tyler
+	Corb Lund
+	Toby Keith
+	Dougie Poole
+	Luke Winslow-King
+	JJ Lawhorn
+	Jon Wolfe
+	Charles Kelley
+	Trevor Hall
+	Ronnie Fauss
+	Josh Abbott Band
+	Trampled by Turtles
+	Lee Kernaghan
+	The New Basement Tapes
+	Cold Creek County
+	Dallas Smith
+	Mike Ryan
+	Clay Walker
+	Hot Country Knights
+	Uncle Lucius
+	David Nail
+	Greensky Bluegrass
+	Joe Nichols
+	Guy Penrod
+	Red Shahan
+	Jessie James Decker
+	Big & Rich
+	Travis Collins
+	Bill Evans
+	John Moreland
+	John Anderson
+	Logan Ledger
+	Parker Millsap
+	Cypress Spring
+	Ned LeDoux
+	Old Crow Medicine Show
+	Ronnie Dunn
+	Colt Ford
+	SMO
+	The Strumbellas
+	Fruition
+	Carolina Chocolate Drops
+	Danny Worsnop
+	James Wesley
+	A Thousand Horses
+	Love and Theft
+	Fleet Foxes
+	Kenny Wayne Shepherd
+	Whitey Morgan and the 78's
+	American Aquarium
+	Montgomery Gentry
+	Curtis Grimes
+	High Valley
+	The Washboard Union
+	Gangstagrass
+	George Canyon
+	The Devil Makes Three
+	Hootie & The Blowfish
+	Randy Rogers
+	Kiefer Sutherland
+	Jojo Mason
+	Charlie Farley
+	Pokey LaFarge
+	Chuck Wicks
+	Lenny Cooper
+	Hayes Carll
+	Keller & The Keels
+	Mipso
+	Bubba Sparxxx
+	Neko Case
+	Chris Knight
+	Tim Hicks
+	Alee
+	Craig Morgan
+	Dean Brody
+	The White Buffalo
+	Possessed by Paul James
+	Steve Moakler
+	David Lee Murphy
+	Sam Grow
+	Dwight Yoakam
+	Mike and the Moonpies
+	Brett Kissel
+	Terry Allen
+	The Felice Brothers
+	Mo Pitney
+	The Jayhawks
+	Tony Joe White
+	Stoney LaRue
+	Noam Pikelny
+	Eddi Reader
+	Wade Bowen
+	Pony Bradshaw
+	Joshua Ray Walker
+	Tracy Lawrence
+	Gabe Lee
+	Don Williams
+	Hank Williams III
+	Vince Gill
+	Guy Clark
+	Jerrod Niemann
+	Aaron Pritchett
+	Norah Jones
+	Trigger Hippy
+	Trent Harmon
+	Rob Baird
+	Corey Smith
+	Carter Winter
+	Thompson Square
+	The Statesboro Revue
+	Steve Earle
+	North Mississippi Allstars
+	Ray Wylie Hubbard
+	Mark Wills
+	Sundy Best
+	Sam Outlaw
+	The Deslondes
+	Les Claypool's Duo De Twang
+	Jaron And The Long Road To Love
+	Jaime Wyatt
+	Jeff Bates
+	Trace Adkins
+	The Swon Brothers
+	Honey Harper
+	Matrimony
+	Crooked Still
+	Reckless Kelly
+	Glen Campbell
+	Ryan Adams
+	John Baumann
+	Robert Earl Keen
+	Pat Green
+	The Mavericks
+	Roger Miller
+	Charlie Worsham
+	Jason Michael Carroll
+	John Fullbright
+	Green River Ordinance
+	Matt Kennon
+	Dalton Domino
+	Joshua Hedley
+	BJ Barham
+	Hunter Brothers
+	Alabama
+	Edens Edge
+	Buddy Miller
+	Dailey & Vincent
+	Daniel Romano
+	Bob Wayne
+	Shooter Jennings
+	Railroad Earth
+	Moccasin Creek
+	Chris Thile
+	Don Gallardo
+	The Dirt Drifters
+	Kevin Fowler
+	Aaron Goodvin
+	Dave Alvin
+	Casey James
+	The Dirty Guv'nahs
+	Six Market Blvd.
+	Mac McAnally
+	Dee White
+	Will Hoge
+	The Maldives
+	Western Centuries
+	James Otto
+	Kyle Park
+	The Band Of Heathens
+	Micky & The Motorcars
+	Bobby Wills
+	Dead Man Winter
+	Jack Ingram
+	Fred Eaglesmith
+	Michael Tyler
+	The Deep Dark Woods
+	Drew Baldridge
+	Doyle Lawson & Quicksilver
+	Robert Ellis
+	Jeffrey Foucault
+	Cory Morrow
+	JB and The Moonshine Band
+	Sam Bush
+	Jonah Tolchin
+	Jason Eady
+	Renn
+	Adam Hood
+	Bobby Bare
+	Rodney Crowell
+	Steve Grand
+	Town Mountain
+	Moe Bandy
+	Sammy Hagar
+	The Boxcars
+	Hellbound Glory
+	The Kentucky Headhunters
+	Jason Boland & The Stragglers
+	Travis Tritt
+	Lyle Lovett
+	Billy Ray Cyrus
+	Daniel O'Donnell
+	Adam Eckersley Band
+	The Infamous Stringdusters
+	Jason Blaine
+	Ryan Kinder
+	Roger Creager
+	Todd Snider
+	JT Hodges
+	Billy Joe Shaver
+	Joe Pug
+	Jeremy Ivey
+	Bart Crow
+	Cody Canada
+	King Dude
+	The Once
+	Keith Harkin
+	Balsam Range
+	Gill Landry
+	Clint Black
+	Mark Chesnutt
+	Delbert McClinton
+	Jonathan Wilson
+	Jason Cassidy
+	Son Volt
+	No Justice
+	Ronnie Milsap
+	Ryan Beaver
+	Shawn Mullins
+	Gene Watson
+	Slim Dusty
+	The Avett Brothers
+	Buddy Miller & Jim Lauderdale
+	The Statler Brothers
+	Bleu Edmondson
+	Jimmy Fortune
+	Chris Hillman
+	Doug Paisley
+	James Dupre
+	Lonestar
+	Richard Buckner
+	The Builders and The Butchers
+	Brooke White
+	Radney Foster
+	Hackensaw Boys
+	Jeff Bridges
+	Randy Travis
+	Rich O'Toole
+	Old 97's
+	Ian Tyson
+	John Mellencamp
+	The Stray Birds
+	Blue Rodeo
+	Riders In The Sky
+	Cowboy Troy
+	Greg Brown
+	Old Man Markley
+	Del Barber
+	Ty Stone
+	Joe Diffie
+	Chris Shiflett
+	Gord Bamford
+	Josh Gracin
+	Joey Feek
+	Charlie Robison
+	Christian Lopez
+	The Lonesome Trio
+	The Black Lillies
+	Jason Hawk Harris
+	Steep Canyon Rangers
+	Kevin Costner & Modern West
+	Joel Crouse
+	Chris Lane Band
+	John Hiatt
+	Steve Holy
+	Ray Price
+	Patterson Hood
+	Brandon Stansell
+	Ray Scott
+	The Bellamy Brothers
+	Sammy Kershaw
+	Wayne Hancock
+	Max Gomez
+	Fossil Collective
+	The Greencards
+	Fifth On The Floor
+	Vandoliers
+	Stonewall Jackson
+	Josh Kelley
+	Trailer Choir
+	Elliott BROOD
+	Justin Haigh
+	Jimmy Rankin
+	Randy Montana
+	Chatham County Line
+	The Gourds
+	Lonesome River Band
+	Kix Brooks
+	Chuck Prophet
+	Lucas Hoge
+	Hot Rize
+	T. Graham Brown
+	Amos Lee
+	Marty Stuart And His Fabulous Superlatives
+	Cumberland River
+	Jonny Two Bags
+	Sons Of Bill
+	Patrick Park
+	The Earls Of Leicester
+	Howe Gelb
+	Cabinet
+	The Seldom Scene
+	Scooter Brown Band
+	Doug Seegers
+	Darryl Worley
+	Josh Williams
+	Doyle Lawson
+	Radio Birds
+	Frank Sinatra
+	The Sisterhood Band
+	The Honey Dewdrops
+	Rob Ickes & Trey Hensley
+	The Oak Ridge Boys
+	Robbie Fulks
+	Ha Ha Tonka
+	Jesse Dayton
+	Merle Haggard
+	Israel Nash
+	Michael Peterson
+	Chris Bathgate
+	Mac Powell and the Family Reunion
+	Jaydee Bixby
+	Humming House
+	Bucky Covington
+	The Del McCoury Band
+	Ricky Skaggs
+	The Time Jumpers
+	Caleb Caudle
+	Angus Gill
+	Mountain Heart
+	Jeb Loy Nichols
+	Delbert McClinton & Glen Clark
+	Bradley Walker
+	The Grascals
+	Austin Lucas
+	Little Texas
+	Due West
+	Kinky Friedman
+	Jamie O'Neal
+	Darden Smith
+	Cliff Cody
+	Aaron Einhouse
+	The Two Man Gentlemen Band
+	Michael Chapman
+	Collin Raye
+	John Berry
+	Hayley Jensen
+	Dale Watson
+	Neal McCoy
+	The Bottle Rockets
+	Raul Malo
+	Jace Everett
+	Darrell Scott
+	Cadillac Sky
+	Ty Herndon
+	Banditos
+	Richmond Fontaine
+	Brandon Rhyder
+	Ponderosa
+	Chuck Mead
+	Dylan LeBlanc
+	Balto
+	Pete Molinari
+	Elvis Costello
+	Tim O'Brien
+	David Luning
+	Carson McHone
+	Charlie Daniels
+	Buxton
+	Joe Ely
+	Jack Tempchin
+	Ralph Stanley
+	Chad Brownlee
+	Johnny Lee
+	Bill Kirchen
+	Chris Shiflett & The Dead Peasants
+	Deadstring Brothers
+	The Deadly Gentlemen
+	Sons Of Sylvia
+	Michael Martin Murphey
+	Darrell Webb Band
+	Billy Don Burns
+	Doc Walker
+	Jody Booth
+	Red Horse
+	John Paul White
+	Dave Carter & Tracy Grammer
+	Preacher Stone
+	Tony Furtado
+	Jason McCoy
+	David Ball
+	Jim Lauderdale
+	Tom Russell
+	Blue Highway
+	The Bryce Canyon Wranglers
+	Larry Sparks
+	Stephen Foster
+	James Durbin
+	Steve Wariner
+	Frank Solivan
+	Brent Best
+	Byron Hill
+	Waco Brothers
+	Dave Adkins
+	Scott Kelly
+	George Hamilton IV
+	Bob Woodruff
+	Giant Sand
+	Ollabelle
+	Asleep At The Wheel
+	Truth & Salvage Co.
+	Poor Moon
+	6 String Drag
+	Don DiLego
+	Dan Bern
+	Sonny Burgess
+	Emerson Drive
+	Ted Russell Kamp
+	Nathan Carter
+	Troy Cassar-Daley
+	Mark Olson
+	Moot Davis
+	Jonathan Edwards
+	Morgan Frazier
+	Arthur Alligood
+	Chris Gantry
+	Paul Burch
+	Hill Country Revue
+	Lane Brody
+	Mike Aiken
+	Demolition String Band
+	Norman Blake
+	Brian Wright
+	Charlie Louvin
+	Henry Wagons
+	Stewart Eastham
+	Wagons
+	Chance McKinney
+	David Starr

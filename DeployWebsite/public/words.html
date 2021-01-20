@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSK1PLF3W9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VSK1PLF3W9');
+    </script>
+    <title>Country Lyric Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.typekit.net/fse6wuf.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+    <meta charset="UTF-8">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" onclick="checkBoxClicked()">
+            <i class="fas fa-bars"></i>
+        </label>
+
+            <a href="index.html" class="title-link"> COUNTRY LYRIC ANALYSIS </a>
+
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="analysis.html">ANALYSIS</a></li>
+                <li><a href="search.html">SEARCH</a></li>
+                <li><a href="songs.html">SONGS</a></li>
+                <li><a href="artists.html">ARTISTS</a></li>
+                <li><a href="genres.html">GENRES</a></li>
+                <li><a href="words.html">WORDS</a></li>
+                <li><a href="lyrics.html">COMPARE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Words</h1>
+
+            <!--rank words by uses-->
+            <div class="chart full-width">
+                <div class="chart-title">
+                    <h2>Rank Words by Total Uses</h2>
+                    <div class="anim">
+                        <span class="tooltip" data-tooltip="Rank words by number of uses for different genres. Words like the, and, a, an have
+                         been omitted. A full list of omitted words can be found on the About page">?</span>
+                    </div>
+                </div>
+
+                <div class="box-shadow">
+                    <select name="genres" class="dropdown">
+                        <option value="29" selected>All Artists</option>
+                        <option value="27">Acoustic Pop</option>
+                        <option value="14">Alberta Country</option>
+                        <option value="7">Alternative Country</option>
+                        <option value="16">Americana</option>
+                        <option value="6">Arkansas Country</option>
+                        <option value="13">Australian Country</option>
+                        <option value="4">Banjo</option>
+                        <option value="21">Bluegrass</option>
+                        <option value="17">Canadian Contemporary Country</option>
+                        <option value="10">Canadian Country</option>
+                        <option value="12">Classic Country Pop</option>
+                        <option value="23">Contemporary Country</option>
+                        <option value="2">Country</option>
+                        <option value="11">Country Dawn</option>
+                        <option value="15">Country Pop</option>
+                        <option value="19">Country Rap</option>
+                        <option value="26">Country Road</option>
+                        <option value="24">Country Rock</option>
+                        <option value="8">Deep New Americana</option>
+                        <option value="20">Folk</option>
+                        <option value="1">Indie</option>
+                        <option value="25">Indie Folk</option>
+                        <option value="28">Modern Country Rock</option>
+                        <option value="3">New Americana</option>
+                        <option value="9">None</option>
+                        <option value="18">Outlaw Country</option>
+                        <option value="5">Red Dirt</option>
+                        <option value="22">Texas Country</option>
+                        
+                    </select>
+                    <select name="results" class="dropdown">
+                        <option value="15">Results: 15</option>
+                        <option value="30">Results: 30</option>
+                        <option value="50">Results: 50</option>
+                        <option value="100">Results: 100</option>
+                        <option value="200">Results: 200</option>
+                    </select>
+                    <button class="btn" type="button" onclick="fetchWordRanks()">Enter</button>
+
+                    <div id="RankWordsByGenre"></div>
+                </div>
+
+
+            </div>
+
+            <!--graph word usage over time-->
+            <div class="chart full-width">
+                <div class="chart-title">
+                    <h2>Compare Words by Usage and Genre</h2>
+                    <div class="anim">
+                        <span class="tooltip" data-tooltip="This graphs the average number of uses of a given word per song over time. Compare up to seven words and across multiple genres.">?</span>
+                    </div>
+                </div>
+
+                <div class="box-shadow">
+                    <div class='word-row'>
+                        <p style="display: inline;">Word 1:</p>
+                        <input type="text" class="text-input" value="little">
+                        <select name="genres" class="dropdown">
+                            <option value="29" selected>All Artists</option>
+                            <option value="27">Acoustic Pop</option>
+                            <option value="14">Alberta Country</option>
+                            <option value="7">Alternative Country</option>
+                            <option value="16">Americana</option>
+                            <option value="6">Arkansas Country</option>
+                            <option value="13">Australian Country</option>
+                            <option value="4">Banjo</option>
+                            <option value="21">Bluegrass</option>
+                            <option value="17">Canadian Contemporary Country</option>
+                            <option value="10">Canadian Country</option>
+                            <option value="12">Classic Country Pop</option>
+                            <option value="23">Contemporary Country</option>
+                            <option value="2">Country</option>
+                            <option value="11">Country Dawn</option>
+                            <option value="15">Country Pop</option>
+                            <option value="19">Country Rap</option>
+                            <option value="26">Country Road</option>
+                            <option value="24">Country Rock</option>
+                            <option value="8">Deep New Americana</option>
+                            <option value="20">Folk</option>
+                            <option value="1">Indie</option>
+                            <option value="25">Indie Folk</option>
+                            <option value="28">Modern Country Rock</option>
+                            <option value="3">New Americana</option>
+                            <option value="9">None</option>
+                            <option value="18">Outlaw Country</option>
+                            <option value="5">Red Dirt</option>
+                            <option value="22">Texas Country</option>
+                            
+                        </select>
+                        <button class="btn remove-btn" type="button" onclick="removeWordRow(0)">Remove</button>
+                    </div>
+
+                    <button class="btn" type="button" onclick="addWordRow()">Add Word</button>
+                    <button class="btn" type="button" onclick="getWordsOverTime()">Enter</button>
+
+
+                    <div id="GraphWordUsageOverTime"></div>
+                    <p>Because the number of songs per year is not constant, the vertical axis of the graph is in terms of average number of uses per song.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="wordCharts.js"></script>
+
+    <footer>
+        <div style="height:200px;"></div>
+    </footer>
+</body>
+
+</html>

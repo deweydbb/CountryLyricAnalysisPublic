@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSK1PLF3W9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VSK1PLF3W9');
+    </script>
+    <title>Country Music Lyric Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.typekit.net/fse6wuf.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+
+    <meta charset="UTF-8">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" onclick="checkBoxClicked()">
+            <i class="fas fa-bars"></i>
+        </label>
+
+            <a href="index.html" class="title-link"> COUNTRY LYRIC ANALYSIS </a>
+
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="analysis.html">ANALYSIS</a></li>
+                <li><a href="search.html">SEARCH</a></li>
+                <li><a href="songs.html">SONGS</a></li>
+                <li><a href="artists.html">ARTISTS</a></li>
+                <li><a href="genres.html">GENRES</a></li>
+                <li><a href="words.html">WORDS</a></li>
+                <li><a href="lyrics.html">COMPARE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 id="SongTitleArtist"></h1>
+            <!--General Stats-->
+            <div class="chart chart-left">
+                <div class="chart-title">
+                    <h2>General Statistics</h2>
+                    <div class="anim">
+                        <span class="tooltip" data-tooltip="This displays general statistics about the song. The genre of the song 
+                        is based directly on the Spotify's classification. More information about genre and other information displayed
+                         can be found on the About page.">?</span>
+                    </div>
+                </div>
+                <div class="box-shadow">
+                    <div class="chart-column-title">
+                        <h3 class="left">Category</h3>
+                        <h3 class="right">Statistic</h3>
+                    </div>
+
+                    <ul class="ordered-list">
+                        <li>
+                            <div>
+                                <span>Genre:</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>Artist:</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>Album:</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>Year Released:</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>Number of words:</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>Popularity</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>Uniqueness</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>Diversity:</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>Stereotype:</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>Most common stereotype:</span>
+                                <span class="result-number"></span>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!--Song Preview-->
+            <div class="chart chart-right">
+                <div class="chart-title">
+
+                    <h2>Song Preview</h2>
+                    <div class="anim">
+                        <span class="tooltip" data-tooltip="This displays the album cover of the song. If a 30 second preview is available, the controls will be located at the bottom of the image.">?</span>
+                    </div>
+
+                </div>
+                <div class="box-shadow" style="padding: 0px;">
+                </div>
+            </div>
+
+            <div style="clear: both; "></div>
+
+            <!--General Stats VS Average-->
+            <div class="chart chart-left">
+                <div class="chart-title">
+                    <h2>Song VS Average</h2>
+                    <div class="anim">
+                        <span class="tooltip" data-tooltip="This graph displays each of the song's statistic (in blue) versus the corresponding average of all songs (in red). 
+                         More information about what these values 
+                        represent and how they are calculated can be found on the About page">?</span>
+                    </div>
+                </div>
+                <div class="box-shadow" id="StatisticsGraph"></div>
+            </div>
+
+            <!--Stereotype categories VS Average-->
+            <div class="chart chart-right">
+                <div class="chart-title">
+                    <h2>Song Stereotypes VS Average</h2>
+                    <div class="anim">
+                        <span class="tooltip" data-tooltip="This graph displays each of the song's stereotype category (in blue)
+                        versus the average stereotype category for all songs in the database (in red). More info about stereotypes and stereotype categories can
+                        be found on the About page.">?</span>
+                    </div>
+                </div>
+                <div class="box-shadow" id="StereotypesGraph"></div>
+            </div>
+
+            <div style="clear: both;"></div>
+
+        </div>
+    </main>
+
+    <script src="songSpecificCharts.js"></script>
+
+    <footer>
+        <div style="height:200px; "></div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSK1PLF3W9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VSK1PLF3W9');
+    </script>
+    <title>Country Lyric Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.typekit.net/fse6wuf.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+    <meta charset="UTF-8">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" onclick="checkBoxClicked()">
+            <i class="fas fa-bars"></i>
+        </label>
+
+            <a href="index.html" class="title-link"> COUNTRY LYRIC ANALYSIS </a>
+
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="analysis.html">ANALYSIS</a></li>
+                <li><a href="search.html">SEARCH</a></li>
+                <li><a href="songs.html">SONGS</a></li>
+                <li><a href="artists.html">ARTISTS</a></li>
+                <li><a href="genres.html">GENRES</a></li>
+                <li><a href="words.html">WORDS</a></li>
+                <li><a href="lyrics.html">COMPARE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Search</h1>
+
+            <!--Song search-->
+            <div class="chart full-width">
+                <div class="chart-title">
+                    <h2>Song Search</h2>
+                    <div class="anim">
+                        <span class="tooltip" data-tooltip="Search for a song either by name of song or by artist.">?</span>
+                    </div>
+                </div>
+
+                <div class="box-shadow search">
+                    <h4 id="errorMsgSong" hidden style="color: red;"></h4>
+
+
+                    <input id="songTitle" type="text" placeholder="Search for song by title">
+                    <button class="btn" type="button" onclick="searchForSongByTitle()">Search</button>
+                    <br>
+                    <input id="songArtist" type="text" placeholder="Search for song by artist">
+                    <button class="btn" type="button" onclick="searchForSongByArtist()">Search</button>
+                    <br><br>
+                    <h4>Results: </h4>
+                    <ul class="ordered-list" id="songResults" style="list-style-type: disc;">
+
+                    </ul>
+                </div>
+            </div>
+
+            <!--Artist search-->
+            <div class="chart full-width">
+                <div class="chart-title">
+                    <h2>Artist Search</h2>
+                    <div class="anim">
+                        <span class="tooltip" data-tooltip="Search for artist by name or by genre. If using the genre section, all artists that belong to the given genre will be listed.">?</span>
+                    </div>
+                </div>
+
+                <div class="box-shadow search">
+                    <h4 id="errorMsgArtist" hidden style="color: red;">HELLO</h4>
+
+                    <input id="artistNameInput" type="text" placeholder="Search for artist by name">
+                    <button class="btn" type="button" onclick="searchForArtistByName()">Search</button>
+                    <br>
+                    <p style="display: inline;">Search for artists by genre: </p>
+                    <select id="genreDropDown" name="genres" class="dropdown">
+                        <option value="27">Acoustic Pop</option>
+                        <option value="14">Alberta Country</option>
+                        <option value="7">Alternative Country</option>
+                        <option value="16">Americana</option>
+                        <option value="6">Arkansas Country</option>
+                        <option value="13">Australian Country</option>
+                        <option value="4">Banjo</option>
+                        <option value="21">Bluegrass</option>
+                        <option value="17">Canadian Contemporary Country</option>
+                        <option value="10">Canadian Country</option>
+                        <option value="12">Classic Country Pop</option>
+                        <option value="23" selected>Contemporary Country</option>
+                        <option value="2">Country</option>
+                        <option value="11">Country Dawn</option>
+                        <option value="15">Country Pop</option>
+                        <option value="19">Country Rap</option>
+                        <option value="26">Country Road</option>
+                        <option value="24">Country Rock</option>
+                        <option value="8">Deep New Americana</option>
+                        <option value="20">Folk</option>
+                        <option value="1">Indie</option>
+                        <option value="25">Indie Folk</option>
+                        <option value="28">Modern Country Rock</option>
+                        <option value="3">New Americana</option>
+                        <option value="9">None</option>
+                        <option value="18">Outlaw Country</option>
+                        <option value="5">Red Dirt</option>
+                        <option value="22">Texas Country</option>
+                        
+                    </select>
+                    <button class="btn" type="button" onclick="searchForArtistByGenre()">Search</button>
+                    <br><br>
+                    <h4>Results: </h4>
+                    <ul class="ordered-list" id="artistList" style="list-style-type: disc;">
+
+                    </ul>
+                </div>
+            </div>
+
+            <!--Genre list-->
+            <div class="chart full-width">
+                <div class="chart-title">
+                    <h2>Genre List</h2>
+                    <div class="anim">
+                        <span class="tooltip" data-tooltip="There are only 29 genres so it does not make sense to implement a search function for them.
+                         Instead here is a list in alphabetical order of all of the genres.">?</span>
+                    </div>
+                </div>
+
+                <div class="box-shadow">
+                    <ul class="ordered-list" style="list-style-type: disc; margin-top: 5px; margin-bottom: 5px;">
+                        <li><a href="genreSpecific.html?genreId=27">Acoustic Pop</a></li>
+                        <li><a href="genreSpecific.html?genreId=14">Alberta Country</a></li>
+                        <li><a href="genreSpecific.html?genreId=29">All Artists</a></li>
+                        <li><a href="genreSpecific.html?genreId=7">Alternative Country</a></li>
+                        <li><a href="genreSpecific.html?genreId=16">Americana</a></li>
+                        <li><a href="genreSpecific.html?genreId=6">Arkansas Country</a></li>
+                        <li><a href="genreSpecific.html?genreId=13">Australian Country</a></li>
+                        <li><a href="genreSpecific.html?genreId=4">Banjo</a></li>
+                        <li><a href="genreSpecific.html?genreId=21">Bluegrass</a></li>
+                        <li><a href="genreSpecific.html?genreId=17">Canadian Contemporary Country</a></li>
+                        <li><a href="genreSpecific.html?genreId=10">Canadian Country</a></li>
+                        <li><a href="genreSpecific.html?genreId=12">Classic Country Pop</a></li>
+                        <li><a href="genreSpecific.html?genreId=23">Contemporary Country</a></li>
+                        <li><a href="genreSpecific.html?genreId=2">Country</a></li>
+                        <li><a href="genreSpecific.html?genreId=11">Country Dawn</a></li>
+                        <li><a href="genreSpecific.html?genreId=15">Country Pop</a></li>
+                        <li><a href="genreSpecific.html?genreId=19">Country Rap</a></li>
+                        <li><a href="genreSpecific.html?genreId=26">Country Road</a></li>
+                        <li><a href="genreSpecific.html?genreId=24">Country Rock</a></li>
+                        <li><a href="genreSpecific.html?genreId=8">Deep New Americana</a></li>
+                        <li><a href="genreSpecific.html?genreId=20">Folk</a></li>
+                        <li><a href="genreSpecific.html?genreId=1">Indie</a></li>
+                        <li><a href="genreSpecific.html?genreId=25">Indie Folk</a></li>
+                        <li><a href="genreSpecific.html?genreId=28">Modern Country Rock</a></li>
+                        <li><a href="genreSpecific.html?genreId=3">New Americana</a></li>
+                        <li><a href="genreSpecific.html?genreId=9">None</a></li>
+                        <li><a href="genreSpecific.html?genreId=18">Outlaw Country</a></li>
+                        <li><a href="genreSpecific.html?genreId=5">Red Dirt</a></li>
+                        <li><a href="genreSpecific.html?genreId=22">Texas Country</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="searchDB.js"></script>
+
+    <footer>
+        <div style="height:200px;"></div>
+    </footer>
+</body>
+
+</html>
