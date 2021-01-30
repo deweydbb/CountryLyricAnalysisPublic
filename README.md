@@ -1,6 +1,8 @@
 # Public Lyric Analysis Public
 
-Stripped down and cleaned up version of code behind the lyric analysis project
+Websites
+- [CountryLyricAnalysis.com](CountryLyricAnalysis.com)
+- [Whiskey Riff Article](https://www.whiskeyriff.com/2021/01/19/trucks-tan-legs-and-beer-analyzing-the-lyrics-of-14500-country-songs-from-the-past-10-years/)
 
 ## Project File Description
  - DeployWebsite/public
